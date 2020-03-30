@@ -127,7 +127,6 @@ const getBaseScript = ({ viewportContent, scalesPageToFit, scrollEnabledWithZoom
   }
   ${updateSizeWithMessage('wrapper', scalesPageToFit)}
   window.addEventListener('load', updateSize);
-  window.addEventListener('resize', updateSize);
   ${domMutationObserveScript}
   ${setViewportContent(viewportContent)}
   ${scrollEnabledWithZoomedin ? detectZoomChanged : ''}
